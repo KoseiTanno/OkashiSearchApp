@@ -58,8 +58,8 @@
 				C5B45CB72D745B3900A69E49 /* MyOkashiApp.swift */,
 				C5B45CB92D745B3900A69E49 /* ContentView.swift */,
 				C5B45CC72D74831C00A69E49 /* SafariView.swift */,
-				C5B45CBB2D745B3C00A69E49 /* Assets.xcassets */,
 				C5B45CC52D745BCE00A69E49 /* OkashiData.swift */,
+				C5B45CBB2D745B3C00A69E49 /* Assets.xcassets */,
 				C5B45CBD2D745B3C00A69E49 /* Preview Content */,
 			);
 			path = MyOkashi;

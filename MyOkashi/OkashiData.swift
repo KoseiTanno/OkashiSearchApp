@@ -14,6 +14,7 @@ struct OkashiItem: Identifiable {
     let image: URL
 }
 
+//  お菓子データ検索用クラス
 @Observable class OkashiData {
     
     struct ResultJson: Codable {
@@ -37,6 +38,8 @@ struct OkashiItem: Identifiable {
         }
     }
     
+    //  WebAPI検索用メソッド
+    //  keyword 検索したいワード
     @MainActor
     private func search(keyword: String) async {
         guard let keyword_encode = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
@@ -59,6 +62,7 @@ struct OkashiItem: Identifiable {
             
 //            print(json)
             
+            //  情報の取得ができているか確認
             guard let items = json.item else {return}
             
             okashiList.removeAll()

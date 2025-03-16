@@ -8,6 +8,7 @@
 import SwiftUI
 import SafariServices
 
+//  お菓子をタップしたらWebページを表示する
 struct SafariView: UIViewControllerRepresentable {
     
     let url: URL

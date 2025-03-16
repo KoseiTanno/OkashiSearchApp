@@ -10,17 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var okashiDataList = OkashiData()
     
+    //  入力中の文字列を保持する変数
     @State var inputText = ""
     
+    //  SafariViewの表示有無を管理する変数
     @State var isShowSafari = false
     
     var body: some View {
         VStack {
             TextField("キーワード", text: $inputText, prompt: Text("キーワードを入力してください ") )
             
+            //  入力完了したので検索
             .onSubmit {
                 okashiDataList.searchOkashi(keyword: inputText)
             }
+            //  改行を検索に変更
             .submitLabel(.search)
             .padding()
             
